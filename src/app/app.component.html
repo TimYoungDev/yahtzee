@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>
+    Welcome to Yahtzee!!!
+  </h1>
+
+  <hr>
+
+  <div class="row">
+    <app-scorecard></app-scorecard>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-1">
+      <app-dice #dice1 (value)="diceService.setDiceValueOne($event)"></app-dice>
+    </div>
+    <div class="col-sm-1">
+      <app-dice #dice2 (value)="diceService.setDiceValueTwo($event)"></app-dice>
+    </div>
+    <div class="col-sm-1">
+      <app-dice #dice3 (value)="diceService.setDiceValueThree($event)"></app-dice>
+    </div>
+    <div class="col-sm-1">
+      <app-dice #dice4 (value)="diceService.setDiceValueFour($event)"></app-dice>
+    </div>
+    <div class="col-sm-1">
+      <app-dice #dice5 (value)="diceService.setDiceValueFive($event)"></app-dice>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-primary" (click)="rollAll()">Roll All</button>
+    </div>
+  </div>
+</div>

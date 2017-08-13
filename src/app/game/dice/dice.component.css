@@ -1,0 +1,4 @@
+.disabled-dice {
+  opacity: 0.4;
+  filter: opacity(30%);
+}

@@ -1,0 +1,14 @@
+<p>
+  <span style="background-color: #000;"
+        [ngClass]="{'disabled-dice' : holdDice }">
+    <img class="img-responsive center-block"
+         [ngClass]="{'disabled-dice' : holdDice }"
+         style="width: 75%;"
+         [src]="diceImage"
+         (click)="roll()"/>
+  </span>
+</p>
+<p>
+  <button class="btn btn-primary center-block"
+          (click)="hold()">Hold</button>
+</p>
