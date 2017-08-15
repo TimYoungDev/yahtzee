@@ -32,6 +32,14 @@ export class ScoreService {
   public setSixes(diceVals: number[]) {
     this.score.sixes = this.getTotal(diceVals, 6);
   }
+  public getTopTotal() {
+    return  this.score.ones +
+            this.score.twos +
+            this.score.threes +
+            this.score.fours +
+            this.score.fives +
+            this.score.sixes;
+  }
 
   public setChance(diceVals) {
     this.validate(diceVals);
@@ -139,6 +147,16 @@ export class ScoreService {
     let endFound = (diceNumbers[0] >=1 || diceNumbers[5] >= 1);
 
     this.score.largeStraight = (middleFound && endFound) ? 40 : 0;
+  }
+
+  public getBottomTotal() {
+    return  this.score.threeOfKind +
+            this.score.fourOfKind +
+            this.score.fullHouse +
+            this.score.smallStraight +
+            this.score.largeStraight +
+            this.score.yahtzee +
+            this.score.chance;
   }
 
   private getTotal(diceVals: number[], targetNum: number) {
