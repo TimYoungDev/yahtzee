@@ -3,7 +3,8 @@
     <label for="inputOnes" class="col-sm-5 control-label">Ones:</label>
     <div class="col-sm-7">
       <input type="number" readonly class="form-control" id="inputOnes" placeholder="Ones"
-             [value]="scoreService.score.ones" (click)="setControlScore($event)">
+             [value]="scoreService.score.ones" [attr.disabled]="scoreService.score.ones ? '':null"
+             (click)="setControlScore($event)">
     </div>
   </div>
 
@@ -11,7 +12,8 @@
     <label for="inputTwos" class="col-sm-5 control-label">Twos:</label>
     <div class="col-sm-7">
       <input type="number" readonly class="form-control" id="inputTwos" placeholder="Twos"
-             [value]="scoreService.score.twos" (click)="setControlScore($event)">
+             [value]="scoreService.score.twos" [attr.disabled]="scoreService.score.twos ? '':null"
+             (click)="setControlScore($event)">
     </div>
   </div>
 
@@ -19,7 +21,8 @@
     <label for="inputThrees" class="col-sm-5 control-label">Threes:</label>
     <div class="col-sm-7">
       <input type="number" readonly class="form-control" id="inputThrees" placeholder="Threes"
-             [value]="scoreService.score.threes" (click)="setControlScore($event)">
+             [value]="scoreService.score.threes" [attr.disabled]="scoreService.score.threes ? '':null"
+             (click)="setControlScore($event)">
     </div>
   </div>
 
@@ -27,7 +30,8 @@
     <label for="inputFours" class="col-sm-5 control-label">Fours:</label>
     <div class="col-sm-7">
       <input type="number" readonly class="form-control" id="inputFours" placeholder="Fours"
-             [value]="scoreService.score.fours" (click)="setControlScore($event)">
+             [value]="scoreService.score.fours" [attr.disabled]="scoreService.score.fours ? '':null"
+             (click)="setControlScore($event)">
     </div>
   </div>
 
@@ -35,7 +39,8 @@
     <label for="inputFives" class="col-sm-5 control-label">Fives:</label>
     <div class="col-sm-7">
       <input type="number" readonly class="form-control" id="inputFives" placeholder="Fives"
-             [value]="scoreService.score.fives" (click)="setControlScore($event)">
+             [value]="scoreService.score.fives" [attr.disabled]="scoreService.score.fives ? '':null"
+             (click)="setControlScore($event)">
     </div>
   </div>
 
@@ -43,7 +48,8 @@
     <label for="inputSixes" class="col-sm-5 control-label">Sixes:</label>
     <div class="col-sm-7">
       <input type="number" readonly class="form-control" id="inputSixes" placeholder="Sixes"
-             [value]="scoreService.score.sixes" (click)="setControlScore($event)">
+             [value]="scoreService.score.sixes" [attr.disabled]="scoreService.score.sixes ? '':null"
+             (click)="setControlScore($event)">
     </div>
   </div>
 </div>
@@ -53,7 +59,8 @@
     <label for="inputThreeKind" class="col-sm-5 control-label">Three Of A Kind:</label>
     <div class="col-sm-7">
       <input type="number" readonly class="form-control" id="inputThreeKind" placeholder="Three Of A Kind"
-             [value]="scoreService.score.threeOfKind" (click)="setControlScore($event)">
+             [value]="scoreService.score.threeOfKind" [attr.disabled]="scoreService.score.threeOfKind ? '':null"
+             (click)="setControlScore($event)">
     </div>
   </div>
 
@@ -61,7 +68,8 @@
     <label for="inputFourKind" class="col-sm-5 control-label">Four Of A Kind:</label>
     <div class="col-sm-7">
       <input type="number" readonly class="form-control" id="inputFourKind" placeholder="Four Of A Kind"
-             [value]="scoreService.score.fourOfKind" (click)="setControlScore($event)">
+             [value]="scoreService.score.fourOfKind" [attr.disabled]="scoreService.score.fourOfKind ? '':null"
+             (click)="setControlScore($event)">
     </div>
   </div>
 
@@ -69,7 +77,8 @@
     <label for="inputFullHouse" class="col-sm-5 control-label">Full House:</label>
     <div class="col-sm-7">
       <input type="number" readonly class="form-control" id="inputFullHouse" placeholder="Full House"
-             [value]="scoreService.score.fullHouse" (click)="setControlScore($event)">
+             [value]="scoreService.score.fullHouse" [attr.disabled]="scoreService.score.fullHouse ? '':null"
+             (click)="setControlScore($event)">
     </div>
   </div>
 
@@ -77,7 +86,8 @@
     <label for="inputSmStraight" class="col-sm-5 control-label">Small Straight:</label>
     <div class="col-sm-7">
       <input type="number" readonly class="form-control" id="inputSmStraight" placeholder="Sm Straight"
-             [value]="scoreService.score.smallStraight" (click)="setControlScore($event)">
+             [value]="scoreService.score.smallStraight" [attr.disabled]="scoreService.score.smallStraight ? '':null"
+             (click)="setControlScore($event)">
     </div>
   </div>
 
@@ -85,7 +95,8 @@
     <label for="inputLgStraight" class="col-sm-5 control-label">Large Straight:</label>
     <div class="col-sm-7">
       <input type="number" readonly class="form-control" id="inputLgStraight" placeholder="Lg Straight"
-             [value]="scoreService.score.largeStraight" (click)="setControlScore($event)">
+             [value]="scoreService.score.largeStraight" [attr.disabled]="scoreService.score.largeStraight ? '':null"
+             (click)="setControlScore($event)">
     </div>
   </div>
 
@@ -93,7 +104,8 @@
     <label for="inputYahtzee" class="col-sm-5 control-label">Yahtzee:</label>
     <div class="col-sm-7">
       <input type="number" readonly class="form-control" id="inputYahtzee" placeholder="Yahtzee"
-             [value]="scoreService.score.yahtzee" (click)="setControlScore($event)">
+             [value]="scoreService.score.yahtzee" [attr.disabled]="scoreService.score.yahtzee ? '':null"
+             (click)="setControlScore($event)">
     </div>
   </div>
 
@@ -101,7 +113,8 @@
     <label for="inputChance" class="col-sm-5 control-label">Chance:</label>
     <div class="col-sm-7">
       <input type="number" readonly class="form-control" id="inputChance" placeholder="Chance"
-             [value]="scoreService.score.chance" (click)="setControlScore($event)">
+             [value]="scoreService.score.chance" [attr.disabled]="scoreService.score.chance ? '':null"
+             (click)="setControlScore($event)">
     </div>
   </div>
 

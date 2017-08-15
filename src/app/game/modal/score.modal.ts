@@ -2,20 +2,20 @@
 export class ScoreModal {
 
   constructor() {
-    this.ones = 0;
-    this.twos = 0;
-    this.threes = 0;
-    this.fours = 0;
-    this.fives = 0;
-    this.sixes = 0;
+    this.ones = null;
+    this.twos = null;
+    this.threes = null;
+    this.fours = null;
+    this.fives = null;
+    this.sixes = null;
 
-    this.threeOfKind = 0;
-    this.fourOfKind = 0;
-    this.smallStraight = 0;
-    this.largeStraight = 0;
-    this.fullHouse = 0;
-    this.yahtzee = 0;
-    this.chance = 0;
+    this.threeOfKind = null;
+    this.fourOfKind = null;
+    this.smallStraight = null;
+    this.largeStraight = null;
+    this.fullHouse = null;
+    this.yahtzee = null;
+    this.chance = null;
   }
 
   public ones:number;

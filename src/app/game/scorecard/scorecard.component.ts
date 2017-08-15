@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {ScoreService} from "../../score.service";
 import {DiceService} from "../../dice.service";
 
@@ -8,6 +8,9 @@ import {DiceService} from "../../dice.service";
   styleUrls: ['./scorecard.component.css']
 })
 export class ScorecardComponent implements OnInit {
+  @Output()
+  scoreCardSet = new EventEmitter<boolean>();
+
   private diceService;
   private scoreService;
 
@@ -37,5 +40,7 @@ export class ScorecardComponent implements OnInit {
       case 'inputYahtzee': this.scoreService.setYahtzee(diceValues); break;
       case 'inputChance': this.scoreService.setChance(diceValues); break;
     }
+
+    this.scoreCardSet.emit(true);
   }
 }

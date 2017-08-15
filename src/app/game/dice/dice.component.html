@@ -1,14 +1,13 @@
 <p>
   <span style="background-color: #000;"
-        [ngClass]="{'disabled-dice' : holdDice }">
+        [ngClass]="{'disabled-dice' : holdDice || !isRollable }">
     <img class="img-responsive center-block"
-         [ngClass]="{'disabled-dice' : holdDice }"
+         [ngClass]="{'disabled-dice' : holdDice || !isRollable }"
          style="width: 75%;"
-         [src]="diceImage"
-         (click)="roll()"/>
+         [src]="diceImage"/>
   </span>
 </p>
 <p>
   <button class="btn btn-primary center-block"
-          (click)="hold()">Hold</button>
+          (click)="toggleHold()">Hold</button>
 </p>

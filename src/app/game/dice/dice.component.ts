@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-dice',
@@ -8,12 +8,15 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 export class DiceComponent implements OnInit {
   @Output()
   value = new EventEmitter<number>();
+  @Input()
+  isRollable: boolean;
 
+  holdDice: boolean;
   diceValue: number;
   diceImage: string;
-  holdDice: boolean;
 
   constructor() {
+    this.isRollable = true;
   }
 
   ngOnInit() {
@@ -27,7 +30,7 @@ export class DiceComponent implements OnInit {
   }
 
   public roll() {
-    if (this.holdDice) {
+    if (this.holdDice || !this.isRollable) {
       return;
     }
 
@@ -36,7 +39,11 @@ export class DiceComponent implements OnInit {
     this.value.emit(this.diceValue);
   }
 
-  public hold() {
+  public toggleHold() {
     this.holdDice = !this.holdDice;
+  }
+
+  public resetHold() {
+    this.holdDice = false;
   }
 }

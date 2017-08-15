@@ -4,9 +4,11 @@ import { Injectable } from '@angular/core';
 export class DiceService {
 
   diceValues: number[];
+  rollCount: number;
 
   constructor() {
     this.diceValues = [1,1,1,1,1];
+    this.resetRollCount();
   }
 
   public getDiceValues() {
@@ -31,5 +33,17 @@ export class DiceService {
 
   public setDiceValueFive(value) {
     this.diceValues[4] = value;
+  }
+
+  public resetRollCount() {
+    this.rollCount = 0;
+  }
+
+  public addRoll() {
+    this.rollCount++;
+  }
+
+  public getRollCount() {
+    return this.rollCount;
   }
 }
