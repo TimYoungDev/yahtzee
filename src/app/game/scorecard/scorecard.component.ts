@@ -1,6 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {ScoreService} from "../../score.service";
-import {DiceService} from "../../dice.service";
+import {ScoreService} from "../service/score.service";
+import {DiceService} from "../service/dice.service";
 
 @Component({
   selector: 'app-scorecard',

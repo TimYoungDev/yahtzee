@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {ScoreModal} from "./game/modal/score.modal";
+import {ScoreModal} from "../modal/score.modal";
 
 @Injectable()
 export class ScoreService {

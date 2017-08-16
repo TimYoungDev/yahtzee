@@ -7,14 +7,16 @@ import { AppComponent } from './app.component';
 import { ScorecardComponent } from './game/scorecard/scorecard.component';
 import { AlertModule } from 'ngx-bootstrap';
 import { DiceComponent } from './game/dice/dice.component';
-import {ScoreService} from "./score.service";
-import {DiceService} from "./dice.service";
+import {ScoreService} from "./game/service/score.service";
+import {DiceService} from "./game/service/dice.service";
+import { DiceboardComponent } from './game/diceboard/diceboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScorecardComponent,
-    DiceComponent
+    DiceComponent,
+    DiceboardComponent
   ],
   imports: [
     BrowserModule,

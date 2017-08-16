@@ -43,7 +43,7 @@ describe('DiceComponent', () => {
 
   it('hold should keep dice from rolling', () => {
     const initialValue = component.getValue();
-    component.hold();
+    component.toggleHold();
     // Roll more than once to be sure the number is held
     for (let i = 0; i < 6; i++) {
       component.roll();
@@ -54,7 +54,7 @@ describe('DiceComponent', () => {
 
   it('hold should grey out dice image', () => {
     const expectedStyle = 'disabled-dice';
-    component.hold();
+    component.toggleHold();
     fixture.detectChanges();
 
     const compiled = fixture.debugElement.nativeElement;
