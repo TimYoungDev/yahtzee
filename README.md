@@ -2,27 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
 
-## Development server
+## To Run The Yahtzee App
+- Install [Node js](https://nodejs.org) to get the Node Package Manager (NPM)
+- Install [Angular CLI](https://github.com/angular/angular-cli) using the linked instructions.
+- Clone the Yahtzee repository to your local computer.
+- Open a command terminal to the repository location and run `npm install`
+- Run `ng serve` to start the development server and navigate to `localhost:4200/`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Code Standards and Quality
 
-## Code scaffolding
+- Run `ng lint` for code standards
+- Run `ng test` for Jasmine unit tests on selected code areas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
+## Further Angular CLI help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

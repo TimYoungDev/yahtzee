@@ -1,6 +1,21 @@
 
 export class ScoreModal {
 
+  public ones: number;
+  public twos: number;
+  public threes: number;
+  public fours: number;
+  public fives: number;
+  public sixes: number;
+
+  public threeOfKind: number;
+  public fourOfKind: number;
+  public smallStraight: number;
+  public largeStraight: number;
+  public fullHouse: number;
+  public yahtzee: number;
+  public chance: number;
+
   constructor() {
     this.ones = null;
     this.twos = null;
@@ -17,19 +32,4 @@ export class ScoreModal {
     this.yahtzee = null;
     this.chance = null;
   }
-
-  public ones:number;
-  public twos:number;
-  public threes:number;
-  public fours:number;
-  public fives:number;
-  public sixes:number;
-
-  public threeOfKind:number;
-  public fourOfKind:number;
-  public smallStraight:number;
-  public largeStraight:number;
-  public fullHouse:number;
-  public yahtzee:number;
-  public chance:number;
 }

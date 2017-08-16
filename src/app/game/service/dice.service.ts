@@ -7,7 +7,7 @@ export class DiceService {
   rollCount: number;
 
   constructor() {
-    this.diceValues = [1,1,1,1,1];
+    this.diceValues = [1, 1, 1, 1, 1];
     this.resetRollCount();
   }
 

@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {DiceService} from "../service/dice.service";
+import {DiceService} from '../service/dice.service';
 
 @Component({
   selector: 'app-diceboard',
@@ -10,6 +10,12 @@ export class DiceboardComponent implements OnInit {
   diceService: DiceService;
   diceCanRoll: boolean;
 
+  @ViewChild('dice1') dice1;
+  @ViewChild('dice2') dice2;
+  @ViewChild('dice3') dice3;
+  @ViewChild('dice4') dice4;
+  @ViewChild('dice5') dice5;
+
   constructor(diceService: DiceService) {
     this.diceService = diceService;
     this.diceCanRoll = true;
@@ -17,12 +23,6 @@ export class DiceboardComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  @ViewChild('dice1') dice1;
-  @ViewChild('dice2') dice2;
-  @ViewChild('dice3') dice3;
-  @ViewChild('dice4') dice4;
-  @ViewChild('dice5') dice5;
 
   public rollAll() {
     if (this.diceService.getRollCount() > 2) {

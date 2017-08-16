@@ -3,6 +3,9 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import {ScorecardComponent} from './game/scorecard/scorecard.component';
 import {DiceComponent} from './game/dice/dice.component';
+import {DiceboardComponent} from './game/diceboard/diceboard.component';
+import {DiceService} from './game/service/dice.service';
+import {ScoreService} from './game/service/score.service';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -10,8 +13,13 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         ScorecardComponent,
-        DiceComponent
+        DiceComponent,
+        DiceboardComponent
       ],
+      providers: [
+        DiceService,
+        ScoreService
+      ]
     }).compileComponents();
   }));
 

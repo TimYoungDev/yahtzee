@@ -1,6 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {ScoreService} from "../service/score.service";
-import {DiceService} from "../service/dice.service";
+import {ScoreService} from '../service/score.service';
+import {DiceService} from '../service/dice.service';
 
 @Component({
   selector: 'app-scorecard',
@@ -14,7 +14,7 @@ export class ScorecardComponent implements OnInit {
   private diceService;
   private scoreService;
 
-  constructor(diceService: DiceService, scoreService:ScoreService) {
+  constructor(diceService: DiceService, scoreService: ScoreService) {
     this.diceService = diceService;
     this.scoreService = scoreService;
   }
@@ -26,7 +26,7 @@ export class ScorecardComponent implements OnInit {
   }
 
   setControlScore(event) {
-    let diceValues = this.diceService.getDiceValues();
+    const diceValues = this.diceService.getDiceValues();
 
     switch (event.currentTarget.id) {
       case 'inputOnes': this.scoreService.setOnes(diceValues); break;
