@@ -159,6 +159,10 @@ export class ScoreService {
             this.score.chance;
   }
 
+  public getGrandTotal() {
+    return this.getTopTotal() + this.getBottomTotal();
+  }
+
   private getTotal(diceVals: number[], targetNum: number) {
     this.validate(diceVals);
     let diceNumbers = this.decomposeDiceValues(diceVals);

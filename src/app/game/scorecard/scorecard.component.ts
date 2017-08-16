@@ -19,7 +19,10 @@ export class ScorecardComponent implements OnInit {
     this.scoreService = scoreService;
   }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  public resetScoreCard() {
+    this.scoreService.reset();
   }
 
   setControlScore(event) {

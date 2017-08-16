@@ -54,7 +54,7 @@
   </div>
 
   <div class="form-group">
-    <label for="inputTopTotal" class="col-sm-5 control-label">Total:</label>
+    <label for="inputTopTotal" class="col-sm-5 control-label">Top Total:</label>
     <div class="col-sm-4">
       <input type="number" disabled class="form-control" id="inputTopTotal" placeholder="Top Total"
              [value]="scoreService.getTopTotal()">
@@ -128,10 +128,19 @@
   </div>
 
   <div class="form-group">
-    <label for="inputBottomTotal" class="col-sm-5 control-label">Total:</label>
+    <label for="inputBottomTotal" class="col-sm-5 control-label">Bottom Total:</label>
     <div class="col-sm-4">
       <input type="number" disabled class="form-control" id="inputBottomTotal" placeholder="Bottom Total"
              [value]="scoreService.getBottomTotal()">
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputGrandTotal" class="col-sm-5 control-label">Grand Total:</label>
+    <div class="col-sm-4">
+      <input type="number" disabled class="form-control" id="inputGrandTotal" placeholder="Grand Total"
+             [value]="scoreService.getGrandTotal()">
     </div>
     <div class="col-sm-3"></div>
   </div>
